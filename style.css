@@ -67,9 +67,8 @@ header {
   flex-wrap: wrap;
   gap: 1rem;
 }
-.bottom-form {
-  background-color: hsl(238, 22%, 44%);
-  color: hsl(240, 75%, 98%);
+.logo {
+  cursor: pointer;
 }
 /* main */
 .intro-form {
@@ -100,6 +99,10 @@ header {
 .illustration {
   width: 90%;
   margin: 0 auto;
+}
+.bottom-form {
+  background-color: hsl(238, 22%, 44%);
+  color: hsl(240, 75%, 98%);
 }
 /* link */
 .link {
@@ -226,4 +229,24 @@ footer ul {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+/* hover */
+@media (hover) {
+  li:hover {
+    color: hsl(228, 71%, 70%);
+  }
+  button:hover {
+    background-color: hsl(224, 93%, 68%);
+  }
+  .link:hover {
+    opacity: 0.7;
+  }
+  .social-links i:hover {
+    cursor: pointer;
+    color: hsl(224, 93%, 68%);
+    border: 1px solid hsl(224, 93%, 68%);
+  }
+  .attribution a:hover {
+    color: hsl(224, 93%, 68%);
+  }
 }
