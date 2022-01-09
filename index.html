@@ -6,6 +6,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/54c1afc9ff.js" defer crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
     <title>Fylo landing page with two column layout</title>
     <style></style>
   </head>
@@ -35,12 +36,21 @@
               need, share and collaborate with friends, family, and co-workers.
             </p>
           </div>
-          <form>
-            <label for="email">
-              <input type="email" placeholder="email@example.com" required />
-              <button type="submit">Get Started</button>
-            </label>
-          </form>
+          <label for="email">
+            <form class="form">
+              <div class="form-input-container">
+                <input
+                  type="email"
+                  placeholder="email@example.com"
+                  name="email"
+                  id="email"
+                  required
+                />
+                <button type="submit">Get Started</button>
+              </div>
+              <small class="error-text">Please provide a valid email</small>
+            </form>
+          </label>
         </div>
       </section>
       <section class="middle-bg">
@@ -90,12 +100,21 @@
           </p>
         </div>
         <div class="bottom-form-wrap">
-          <form>
-            <label for="email">
-              <input type="email" placeholder="email@example.com" required />
-              <button type="submit">Get Started For Free</button>
-            </label>
-          </form>
+          <label for="email">
+            <form class="form-bottom">
+              <div class="form-input-container">
+                <input
+                  type="email"
+                  placeholder="email@example.com"
+                  name="email"
+                  id="email-bottom"
+                  required
+                />
+                <button type="submit">Get Started For Free</button>
+              </div>
+              <small class="error-text">Please provide a valid email</small>
+            </form>
+          </label>
         </div>
       </section>
     </main>
